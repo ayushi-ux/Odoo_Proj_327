@@ -1,0 +1,224 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background: rgba(65, 66, 65, 0.7);
+  height: 80px;
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+}
+
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+header ul {
+  float: right;
+  margin-right: 20px;
+}
+
+header ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+header ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+  background: #00000079;
+  transition: .5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  header ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  header ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  header ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    background: #00000079;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+}
+
+section {
+  background: url(/Oddo_Proj/Images/pic-2.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 0px);
+}
+
+section .dv{
+  margin: 110px;
+  margin-right: 150px;
+  height: 700px;
+  width: 800px;
+  left: 100px;
+  /* padding: 10px; */
+  float: right;
+  background-color: rgba(65, 66, 65, 0.5);
+  box-shadow: 5px 5px 7px 7px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+section .dv h1{
+  color: rgb(255, 255, 255, 0.8);
+  margin: 50px;
+  text-align: center;
+  font-size: 60px;
+  font-family:'Courier New', Courier, monospace;
+  letter-spacing: 4px;
+}
+/* About us */
+.about{
+  background: rgb(230, 231, 230);
+  /* background: url(/Oddo_Proj/Images/pic-1.jpg) no-repeat; */
+  background-size: cover;
+}
+
+.about .abt-us{
+  padding: 110px;
+  font-size: 20px;
+}
+
+.about .abt-us .txt_abt h1{
+  text-align: center;
+  font-size: 50px;
+}
+
+.about .abt-us .txt_abt h2{
+  text-align: center;
+  font-size: 20px;
+}
+.about .box_abt h2{
+  font-size: 30px;
+}
+
+.about .box_abt p{
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+
+.about .box_abt{
+  padding: 0px;
+  height: 10px;
+  margin-top: 90px;
+  margin-left: 1000px;
+}
+
+.about .img_abt{
+  position: absolute;
+  margin: 300px;
+}
+
+/* Contect us  */
+.contect{
+  /* background: url(/Oddo_Proj/Images/pic-7.jpg) no-repeat; */
+  background: rgb(230, 231, 230);
+  background-size: cover;
+}
+
+.contect .ct-body{
+  position: absolute;
+  padding: 110px;
+  font-size: 20px;
+}
+
+.contect .ct-body .txt h1{
+  text-align: center;
+}
+
+.contect .ct-body .txt h3{
+  text-align: center;
+}
+
+.box{
+  padding: 0px;
+  height: 10px;
+  margin-top: 150px;
+  margin-left: 300px;
+}
+
+.map{
+  box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.8);
+  height: 450px;
+  width: 600px;
+  margin-top: -350px;
+  margin-left: 800px;
+}
